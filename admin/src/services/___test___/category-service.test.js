@@ -233,5 +233,8 @@ var mockPaginator = function (rest) {
                 }
             });
         }); });
+        (0, globals_1.test)("New test", function () {
+            (0, globals_1.expect)(true).toBe(true);
+        });
     });
 });

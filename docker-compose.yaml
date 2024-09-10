@@ -1,0 +1,122 @@
+version: "3"
+services:
+  nosql-db:
+    logging:
+      driver: "none"
+    ports:
+      - "27018:27017"
+    image: daniyalkozhakmet/nosql-db:latest
+    container_name: nosql-db
+    volumes:
+      - ./db/:/data/db
+  product:
+    build:
+      dockerfile: Dockerfile
+      context: ./product
+    container_name: product
+    ports:
+      - "8001:8001"
+    image: daniyalkozhakmet/product:latest
+    restart: always
+    depends_on:
+      - "nosql-db"
+    volumes:
+      - .:/app
+      - /app/product/node_modules
+
+    env_file:
+      - ./product/.env.dev
+  email:
+    build:
+      dockerfile: Dockerfile
+      context: ./email
+    container_name: email
+    ports:
+      - "8005:8005"
+    image: daniyalkozhakmet/email:latest
+    restart: always
+    depends_on:
+      - "nosql-db"
+    volumes:
+      - .:/app
+      - /app/email/node_modules
+
+    env_file:
+      - ./email/.env.dev
+  shopping:
+    build:
+      dockerfile: Dockerfile
+      context: ./shopping
+    container_name: shopping
+    ports:
+      - "8003:8003"
+    image: daniyalkozhakmet/shopping:latest
+    restart: always
+    depends_on:
+      - "nosql-db"
+    volumes:
+      - .:/app
+      - /app/shopping/node_modules
+    env_file:
+      - ./shopping/.env.dev
+  user:
+    build:
+      dockerfile: Dockerfile
+      context: ./user
+    container_name: user
+    ports:
+      - "8000:8000"
+    image: daniyalkozhakmet/user:latest
+    restart: always
+    depends_on:
+      - "nosql-db"
+
+    volumes:
+      - .:/app/
+      - /app/user/node_modules
+    env_file:
+      - ./user/.env.dev
+  admin:
+    build:
+      dockerfile: Dockerfile
+      context: ./admin
+    container_name: admin
+    ports:
+      - "8004:8004"
+    image: daniyalkozhakmet/admin:latest
+    restart: always
+    depends_on:
+      - "nosql-db"
+
+    volumes:
+      - .:/app/
+      - /app/admin/node_modules
+    env_file:
+      - ./admin/.env.dev
+  seeder:
+    build:
+      dockerfile: Dockerfile
+      context: ./seeder
+    container_name: seeder
+    image: daniyalkozhakmet/seeder:latest
+    depends_on:
+      - "nosql-db"
+    volumes:
+      - .:/app/
+      - /app/admin/node_modules
+    env_file:
+      - ./seeder/.env.dev
+  nginx-proxy:
+    build:
+      dockerfile: Dockerfile
+      context: ./proxy
+    container_name: proxy
+    image: daniyalkozhakmet/proxy:latest
+    depends_on:
+      - product
+      - shopping
+      - user
+      - admin
+      - email
+    ports:
+      - 80:80

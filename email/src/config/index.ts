@@ -1,0 +1,13 @@
+import "dotenv/config";
+export const DB_URL = process.env.MONGODB_URI;
+export const PORT = process.env.PORT;
+export const APP_SECRET = process.env.APP_SECRET;
+export const MSG_QUEUE_URL = process.env.MSG_QUEUE_URL;
+export const EXCHANGE_NAME = process.env.EXCHANGE_NAME;
+export const SHOPPING_SERVICE = "SHOPPING_SERVICE";
+export const PRODUCT_SERVICE = "PRODUCT_SERVICE";
+export const ADMIN_SERVICE = "ADMIN_SERVICE";
+export const USER_SERVICE = "USER_SERVICE";
+export const EMAIL_SERVICE = "EMAIL_SERVICE";
+export const MJ_APIKEY_PUBLIC = process.env.MJ_APIKEY_PUBLIC;
+export const MJ_APIKEY_PRIVATE = process.env.MJ_APIKEY_PRIVATE;

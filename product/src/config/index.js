@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.USER_SERVICE_URL = exports.USER_SERVICE = exports.ADMIN_SERVICE = exports.PRODUCT_SERVICE = exports.SHOPPING_SERVICE = exports.EXCHANGE_NAME = exports.MSG_QUEUE_URL = exports.APP_SECRET = exports.DB_URL = void 0;
+require("dotenv/config");
+exports.DB_URL = process.env.MONGODB_URI;
+exports.APP_SECRET = process.env.APP_SECRET;
+exports.MSG_QUEUE_URL = process.env.MSG_QUEUE_URL;
+exports.EXCHANGE_NAME = process.env.EXCHANGE_NAME;
+exports.SHOPPING_SERVICE = "SHOPPING_SERVICE";
+exports.PRODUCT_SERVICE = "PRODUCT_SERVICE";
+exports.ADMIN_SERVICE = "ADMIN_SERVICE";
+exports.USER_SERVICE = "USER_SERVICE";
+exports.USER_SERVICE_URL = process.env.USER_SERVICE_URL;

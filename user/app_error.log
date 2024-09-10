@@ -1,0 +1,21 @@
+{"level":"error","message":"Fri Aug 23 2024 02:30:47 GMT+0600 (Восточный Казахстан)-{}","private":true}
+{"level":"error","message":"Fri Aug 23 2024 02:36:25 GMT+0600 (Восточный Казахстан)-{\"name\":\"error\",\"statusCode\":500,\"isOperational\":true,\"errorStack\":null,\"logError\":null}","private":true}
+{"level":"error","message":"Fri Aug 23 2024 02:36:31 GMT+0600 (Восточный Казахстан)-{\"name\":\"error\",\"statusCode\":500,\"isOperational\":true,\"errorStack\":null,\"logError\":null}","private":true}
+{"level":"error","message":"Fri Aug 23 2024 02:36:33 GMT+0600 (Восточный Казахстан)-{\"name\":\"error\",\"statusCode\":500,\"isOperational\":true,\"errorStack\":null,\"logError\":null}","private":true}
+{"level":"error","message":"Fri Aug 23 2024 02:38:56 GMT+0600 (Восточный Казахстан)-{\"name\":\"error\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":null,\"logError\":null}","private":true}
+{"level":"error","message":"Fri Aug 23 2024 02:45:01 GMT+0600 (Восточный Казахстан)-{\"name\":\"error\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":null,\"logError\":null}","private":true}
+{"level":"error","message":"Fri Aug 23 2024 02:45:01 GMT+0600 (Восточный Казахстан)-{\"name\":\"error\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":null,\"logError\":null}","private":true}
+{"level":"error","message":"Fri Aug 23 2024 02:45:02 GMT+0600 (Восточный Казахстан)-{\"name\":\"error\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":null,\"logError\":null}","private":true}
+{"level":"error","message":"Fri Aug 23 2024 14:56:57 GMT+0600 (Восточный Казахстан)-{\"name\":\"error\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":null,\"logError\":null}","private":true}
+{"level":"error","message":"Fri Aug 23 2024 14:57:04 GMT+0600 (Восточный Казахстан)-{\"name\":\"error\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":null,\"logError\":null}","private":true}
+{"level":"error","message":"Fri Aug 23 2024 14:57:11 GMT+0600 (Восточный Казахстан)-{\"errors\":{\"last_name\":{\"name\":\"ValidatorError\",\"message\":\"Path `last_name` is required.\",\"properties\":{\"message\":\"Path `last_name` is required.\",\"type\":\"required\",\"path\":\"last_name\"},\"kind\":\"required\",\"path\":\"last_name\"}},\"_message\":\"UserModel validation failed\",\"name\":\"ValidationError\",\"message\":\"UserModel validation failed: last_name: Path `last_name` is required.\"}","private":true}
+{"level":"error","message":"Fri Aug 23 2024 14:58:54 GMT+0600 (Восточный Казахстан)-{\"name\":\"error\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":null,\"logError\":null}","private":true}
+{"level":"error","message":"Fri Aug 23 2024 15:07:57 GMT+0600 (Восточный Казахстан)-{\"name\":\"error\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":null,\"logError\":null}","private":true}
+{"level":"error","message":"Fri Aug 23 2024 15:08:02 GMT+0600 (Восточный Казахстан)-{}","private":true}
+{"level":"error","message":"Fri Aug 23 2024 15:09:07 GMT+0600 (Восточный Казахстан)-{\"name\":\"error\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":null,\"logError\":null}","private":true}
+{"level":"error","message":"Fri Aug 23 2024 15:09:09 GMT+0600 (Восточный Казахстан)-{\"name\":\"error\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":null,\"logError\":null}","private":true}
+{"level":"error","message":"Sun Aug 25 2024 20:49:57 GMT+0600 (Восточный Казахстан)-{\"name\":\"error\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":null,\"logError\":null}","private":true}
+{"level":"error","message":"Mon Aug 26 2024 12:29:37 GMT+0600 (Восточный Казахстан)-{\"name\":\"error\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":null,\"logError\":null}","private":true}
+{"level":"error","message":"Mon Aug 26 2024 14:32:01 GMT+0600 (Восточный Казахстан)-{\"name\":\"error\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":null,\"logError\":null}","private":true}
+{"level":"error","message":"Mon Aug 26 2024 21:17:30 GMT+0600 (East Kazakhstan Time)-{\"name\":\"error\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":null,\"logError\":null}","private":true}
+{"level":"error","message":"Tue Aug 27 2024 01:19:17 GMT+0600 (East Kazakhstan Time)-undefined","private":true}

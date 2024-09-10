@@ -152,5 +152,8 @@ describe("Category Service", () => {
         "Category not found"
       );
     });
+    test("New test", () => {
+      expect(true).toBe(true);
+    });
   });
 });
